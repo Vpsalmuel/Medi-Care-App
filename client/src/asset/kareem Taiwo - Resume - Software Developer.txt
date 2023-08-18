@@ -1,0 +1,110 @@
+Kareem Taiwo
+Software Developer
+
+Lagos
+08039197950
+
+An experience WordPress developer with a  good knowledge and hands-on experience with Node JS, Express JS, Mongo DB and React JS along with other technologies. I'm a developer with a proven track record of success, accompanied by a portfolio of over 10 WordPress websites developed and maintained for businesses of all sizes. I possessed a profound understanding of the WordPress platform and its capabilities, My troubleshooting and problem-solving abilities are exceptional, enabling me to swiftly identify and resolve issues.
+In addition to my technical prowess, I exhibit strong teamwork and collaboration skills, always ready to provide assistance to my colleagues. I am known for my quick learning abilities and my enthusiasm for taking on challenges. Continual improvement is at the core of my professional ethos, as I continually seek innovative ways to enhance my work.
+With these qualifications, I am confident in my ability to make valuable contributions to your team and assist in achieving your organizational goals..
+
+PERSONAL INFORMATION
+  Address: , Lagos, 
+  Nationality: 
+  Driving License: 
+  Hobbies: Networking, programming, music, games, research, solving problems.
+
+SOCIAL PROFILES
+  * Linkedin: https://www.linkedin.com/in/kareem-taiwo/
+  * https://github.com/Taiywo/: Github
+  * : 
+  * : 
+
+WORK EXPERIENCE
+  * February 2019 – Present
+    Operations Manager at BaudSpace Warehouse LTD, Ebute Ikorodu
+      Responsibilities:
+
+  Lead a team of technicians in the repair and processing of laptops for shipment.
+  Ensure timely completion of repairs and quality control.
+  Manage the company's website by updating product information, optimizing user interface and experience, also  implementing marketing strategies, and ensuring it is up-to-date and mobile-friendly.
+  Manage the company's inventory, including tracking stock levels, implementing inventory control procedures, and coordinating with suppliers to ensure timely replenishment.
+  Provide technical support,resolves any issues related to laptop repairs, shipment, and website functionality. 
+  Manages sourcing, procurement, transportation, and warehousing. Ensure smooth logistics operations, and timely delivery of products.
+  Implement and maintain quality control procedures to ensure the repair and processing of laptops meet the company's standards. Monitor and improve processes to enhance efficiency and customer satisfaction.
+  Oversee warehouse operations, including receiving, storing, and shipping laptops and other inventory items. 
+  Develop and execute social media strategies to increase brand awareness and drive traffic to the company's website. 
+
+
+  * January 2023 – Present
+    Software Developer Trainee at SAIL Tech, Ebute Ikorodu
+
+  * 
+     at , 
+      
+  Collaborate with UI/UX designers to create wire-frames and low-fidelity prototypes of digital interfaces.
+  Designing icons, buttons, layouts, and other visual elements using design tools.
+  Designed  a Car packing App.
+
+
+
+EDUCATION
+  * October 2009 – November 2013
+    Olabisi Onabanjo University, Lagos Bsc. Zoology
+
+INTERNSHIPS
+  * August 2022 – December 2022
+    UI /UX Designer at HNG intership 7, Lagos
+
+
+PROJECTS
+  * , , 
+
+    Recipe Search App
+http://codent-recipe.vercel.app/
+This is a recipe search application that allows users to search for recipes and view detailed instructions for each recipe.
+
+  Designing and developing the front-end of the recipe search app using React and Tailwind CSS.
+  Integrate it with external APIs
+
+
+Weather App
+https://taiywo.github.io/Weather-App/
+Users can search for weather in any Location 
+
+  Designing and developing the front-end of the recipe search app using HTML,CSS and Javascript.
+  Integrate it with external APIs
+
+
+Fundation Website
+Samshaibufoundation.org• Created visually appealing and user-friendly layouts, incorporating appropriate color schemes, typography, and imagery to enhance the overall website design.• Customized and configured WordPress installations, including setting up and managing theme options, widgets, and menus to meet client requirements.• Managed and organized content with WordPress, creating and editing pages, blog posts, categories, and tags for optimal user experience.• Ensured cross-browser compatibility by thoroughly testing and debugging websites across various browsers and platforms.• Implemented security measures, including SSL certificates and regular security updates, to safeguard WordPress installations against vulnerabilities.• Provided ongoing support and maintenance for WordPress websites, including updates, backups, and bug fixes, ensuring smooth website functioning.
+
+Medicare App
+
+
+  Collaborate with other developers in the process of designing and developments of the App.
+  Design the Landing Page, consume API.
+  Collaborates with developers in designing the back-end using Mongo DB, React and Express
+
+
+
+  * , , 
+
+    SKILLS:
+
+  Software Devolpment Skills: Html, CSS, Javascripts, React JS, MongoDB, Node JS, Tailwind CSS, Git and Github, CPanel, Wordpress.
+  DevOps skills: Jenkins, CI/CD pipeline, MySQL, MongoDB, Ansible, Docker, Kubernetes, Terraform, Linux and Windows OS.
+  Others: Figma, Microsoft office package, Chatgpt, Canva,AWS cloud, Computer Networking.
+
+  * , , 
+
+    AWARD AND CERTIFICATIONS
+
+  Software Developer - SAIL TECH TALENT
+  Devops (beginner) - KODEKLOUD
+  Kubernetes (beginner) - KODEKLOUD
+  Docker(beginner)  - KODEKLOUD
+  AWS(beginner) - AWS Builder
+  Google Cloud Infrastructure - COURSERA
+  Google IT Support Professional Certificate - COURSERA
+
