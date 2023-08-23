@@ -59,7 +59,7 @@ const Navbar = () => {
                             <a href="#logo" className="-m-1.5 p-1.5">
 
                                 <img
-                                    className="h-8 w-auto"
+                                    className="h-14 w-20"
                                     src={logo}
                                     alt=""
                                 />
