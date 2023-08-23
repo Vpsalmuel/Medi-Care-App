@@ -1,0 +1,259 @@
+import React, { useState } from 'react';
+ // Update the path accordingly
+
+function CreateAccount() {
+  const [step, setStep] = useState(1); // Track the current step of the form
+  const [formData, setFormData] = useState({
+    // Beneficiary fields
+    beneficiaryFullName: '',
+    beneficiaryEmail: '',
+    beneficiaryPhone: '',
+    beneficiaryGender: '',
+    beneficiaryMaritalStatus: '',
+
+    // Guarantor fields
+    guarantorFullName: '',
+    guarantorEmail: '',
+    guarantorPhone: '',
+    agreement: false,
+
+    // Payment plan field
+    paymentPlan: '',
+  });
+
+  const handleNextStep = () => {
+    setStep(step + 1);
+  };
+
+  const handleChange = (event) => {
+    const { name, value, type, checked } = event.target;
+    const newValue = type === 'checkbox' ? checked : value;
+    setFormData({
+      ...formData,
+      [name]: newValue,
+    });
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // Perform the necessary action when the form is submitted
+    // For example, you can save the form data or navigate to the next page
+  };
+
+  const renderFormSection = () => {
+    switch (step) {
+      case 1:
+        return (
+          <div className="bg-white p-8 w-1/2 flex flex-col justify-center items-center">
+            <h2 className="text-2xl font-semibold mb-4">Beneficiary Information</h2>
+            <form className="w-full">
+              <div className="mb-4">
+                <label htmlFor="beneficiaryFullName" className="block font-semibold mb-1">
+                  Beneficiary Full Name
+                </label>
+                <input
+                  type="text"
+                  id="beneficiaryFullName"
+                  name="beneficiaryFullName"
+                  value={formData.beneficiaryFullName}
+                  onChange={handleChange}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg"
+                  required
+                />
+              </div>
+              <div className="mb-4">
+                <label htmlFor="beneficiaryEmail" className="block font-semibold mb-1">
+                  Beneficiary Email Address
+                </label>
+                <input
+                  type="email"
+                  id="beneficiaryEmail"
+                  name="beneficiaryEmail"
+                  value={formData.beneficiaryEmail}
+                  onChange={handleChange}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg"
+                  required
+                />
+              </div>
+              <div className="mb-4">
+                <label htmlFor="beneficiaryPhone" className="block font-semibold mb-1">
+                  Beneficiary Phone Number
+                </label>
+                <input
+                  type="tel"
+                  id="beneficiaryPhone"
+                  name="beneficiaryPhone"
+                  value={formData.beneficiaryPhone}
+                  onChange={handleChange}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg"
+                  required
+                />
+              </div>
+              <div className="mb-4">
+                <label htmlFor="beneficiaryGender" className="block font-semibold mb-1">
+                  Beneficiary Gender
+                </label>
+                <select
+                  id="beneficiaryGender"
+                  name="beneficiaryGender"
+                  value={formData.beneficiaryGender}
+                  onChange={handleChange}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg"
+                  required
+                >
+                  <option value="">Select Gender</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div className="mb-4">
+                <label htmlFor="beneficiaryMaritalStatus" className="block font-semibold mb-1">
+                  Beneficiary Marital Status
+                </label>
+                <select
+                  id="beneficiaryMaritalStatus"
+                  name="beneficiaryMaritalStatus"
+                  value={formData.beneficiaryMaritalStatus}
+                  onChange={handleChange}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg"
+                  required
+                >
+                  <option value="">Select Marital Status</option>
+                  <option value="single">Single</option>
+                  <option value="married">Married</option>
+                  <option value="divorced">Divorced</option>
+                  <option value="widowed">Widowed</option>
+                </select>
+              </div>
+              <button
+                type="button"
+                className="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 transition"
+                onClick={handleNextStep}
+              >
+                Next
+              </button>
+            </form>
+          </div>
+        );
+      case 2:
+        return (
+          <div className="bg-white p-8 w-1/2 flex flex-col justify-center items-center">
+            <h2 className="text-2xl font-semibold mb-4">Guarantor Details</h2>
+            <form className="w-full mt-44">
+              <div className="mb-4">
+                <label htmlFor="guarantorFullName" className="block font-semibold mb-1">
+                  Guarantor Full Name
+                </label>
+                <input
+                  type="text"
+                  id="guarantorFullName"
+                  name="guarantorFullName"
+                  value={formData.guarantorFullName}
+                  onChange={handleChange}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg"
+                  required
+                />
+              </div>
+              <div className="mb-4">
+                <label htmlFor="guarantorEmail" className="block font-semibold mb-1">
+                  Guarantor Email Address
+                </label>
+                <input
+                  type="email"
+                  id="guarantorEmail"
+                  name="guarantorEmail"
+                  value={formData.guarantorEmail}
+                  onChange={handleChange}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg"
+                  required
+                />
+              </div>
+              <div className="mb-4">
+                <label htmlFor="guarantorPhone" className="block font-semibold mb-1">
+                  Guarantor Phone Number
+                </label>
+                <input
+                  type="tel"
+                  id="guarantorPhone"
+                  name="guarantorPhone"
+                  value={formData.guarantorPhone}
+                  onChange={handleChange}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg"
+                  required
+                />
+              </div>
+              <div className="mb-4">
+                <label htmlFor="agreement" className="block font-semibold mb-1">
+                  I agree to the terms and conditions
+                </label>
+                <input
+                  type="checkbox"
+                  id="agreement"
+                  name="agreement"
+                  checked={formData.agreement}
+                  onChange={handleChange}
+                  className="mr-2"
+                  required
+                />
+              </div>
+              <button
+                type="button"
+                className="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 transition"
+                onClick={handleNextStep}
+              >
+                Next
+              </button>
+            </form>
+          </div>
+        );
+      case 3:
+        return (
+          <div className="bg-white p-8 w-1/2 flex flex-col justify-center items-center">
+            <h2 className="text-2xl font-semibold mb-4">Payment Plan</h2>
+            <form className="w-full" onSubmit={handleSubmit}>
+              <div className="mb-4">
+                <label htmlFor="paymentPlan" className="block font-semibold mb-1">
+                  Select Payment Plan
+                </label>
+                <select
+                  id="paymentPlan"
+                  name="paymentPlan"
+                  value={formData.paymentPlan}
+                  onChange={handleChange}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg"
+                  required
+                >
+                  <option value="">Select Payment Plan</option>
+                  <option value="monthly">Monthly</option>
+                  <option value="yearly">Yearly</option>
+                </select>
+              </div>
+              <button
+                type="submit"
+                className="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 transition"
+              >
+                Finish
+              </button>
+            </form>
+          </div>
+        );
+      default:
+        return null;
+    }
+  };
+
+  return (
+    <div className="flex h-screen">
+      {/* Left: Form Sections */}
+      {renderFormSection()}
+
+      {/* Right: Image Box */}
+      <div className="w-1/2">
+        <img src="{caregiverImage}" alt="Caregiver" className="w-full h-full object-cover" />
+      </div>
+    </div>
+  );
+}
+
+export default CreateAccount;
